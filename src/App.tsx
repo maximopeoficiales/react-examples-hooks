@@ -1,8 +1,10 @@
-import Counter from "./components/01-useState/Counter/Counter";
+// import Counter from "./components/01-useState/Counter/Counter";
 import "./App.css";
-import CounterWithCustomHook from "./components/01-useState/CounterWithCustomHook/CounterWithCustomHook";
-import SimpleForm from "./components/02-useEffect/SimpleForm/SimpleForm";
-import FormWithCustomHook from "./components/02-useEffect/FormWithCustomHook/FormWithCustomHook";
+import FocusScreen from "./components/04-useRef/FocusScreen/FocusScreen";
+// import MultipleCustomHooks from "./components/03-examples/MultipleCustomHooks/MultipleCustomHooks";
+// import CounterWithCustomHook from "./components/01-useState/CounterWithCustomHook/CounterWithCustomHook";
+// import SimpleForm from "./components/02-useEffect/SimpleForm/SimpleForm";
+// import FormWithCustomHook from "./components/02-useEffect/FormWithCustomHook/FormWithCustomHook";
 function App() {
   return (
     <div className="App">
@@ -10,7 +12,9 @@ function App() {
       {/* <Counter />
       <CounterWithCustomHook /> */}
       {/* <SimpleForm /> */}
-      <FormWithCustomHook />
+      {/* <FormWithCustomHook /> */}
+      {/* <MultipleCustomHooks /> */}
+      <FocusScreen />
     </div>
   );
 }

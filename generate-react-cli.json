@@ -6,9 +6,9 @@
   "component": {
     "default": {
       "customTemplates": {
-        "component": "src/templates/TemplateName.tsx"
+        "component": "src/templates/component/TemplateName.tsx"
       },
-      "path": "src/components/02-useEffect",
+      "path": "src/components/04-useRef",
       "withStyle": false,
       "withTest": true,
       "withStory": false,
