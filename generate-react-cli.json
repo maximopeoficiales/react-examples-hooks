@@ -8,7 +8,7 @@
       "customTemplates": {
         "component": "src/templates/TemplateName.tsx"
       },
-      "path": "src/components/01-useState",
+      "path": "src/components/02-useEffect",
       "withStyle": false,
       "withTest": true,
       "withStory": false,
