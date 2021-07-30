@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 
-export function useForm<Type>(values: Type) {
+// de esta manera se le pude poner tipado generico a las arrow functions
+export const useForm = <T extends Object>(values: T) => {
     const [formValues, setFormValues] = useState(values);
 
     const handlerChange = ({ target }: ChangeEvent<HTMLInputElement>) => {

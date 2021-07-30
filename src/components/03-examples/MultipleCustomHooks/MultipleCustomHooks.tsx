@@ -10,7 +10,7 @@ const MultipleCustomHooks = (props: MyProps) => {
   const { state } = useFetch(
     `https://www.breakingbadapi.com/api/characters/${counter}`
   );
-  console.log(state);
+  // console.log(state);
   const { loading, data } = state;
   // cuando sea diferente de null obten este dato
   const { name, birthday, img, status } = !!data && data[0];
