@@ -1,6 +1,9 @@
 // import Counter from "./components/01-useState/Counter/Counter";
 import "./App.css";
-import Layout from "./components/05-useLayoutEffect/Layout";
+import CallbackHook from "./components/06-memos/CallbackHook/CallbackHook";
+// import MemoHook from "./components/06-memos/MemoHook/MemoHook";
+// import Memorize from "./components/06-memos/Memorize/Memorize";
+// import Layout from "./components/05-useLayoutEffect/Layout";
 // import RealExampleRef from "./components/04-useRef/RealExampleRef/RealExampleRef";
 // import FocusScreen from "./components/04-useRef/FocusScreen/FocusScreen";
 // import MultipleCustomHooks from "./components/03-examples/MultipleCustomHooks/MultipleCustomHooks";
@@ -18,7 +21,10 @@ function App() {
       {/* <MultipleCustomHooks /> */}
       {/* <FocusScreen /> */}
       {/* <RealExampleRef /> */}
-      <Layout />
+      {/* <Layout /> */}
+      {/* <Memorize /> */}
+      {/* <MemoHook /> */}
+      <CallbackHook/>
     </div>
   );
 }

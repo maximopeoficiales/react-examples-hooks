@@ -8,7 +8,7 @@
       "customTemplates": {
         "component": "src/templates/component/TemplateName.tsx"
       },
-      "path": "src/components/05-useLayoutEffect",
+      "path": "src/components/06-memos",
       "withStyle": false,
       "withTest": true,
       "withStory": false,
