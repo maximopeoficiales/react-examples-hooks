@@ -1,6 +1,7 @@
 // import Counter from "./components/01-useState/Counter/Counter";
 import "./App.css";
-import CallbackHook from "./components/06-memos/CallbackHook/CallbackHook";
+import TodoApp from "./components/08-useReducer/TodoApp/TodoApp";
+// import CallbackHook from "./components/06-memos/CallbackHook/CallbackHook";
 // import MemoHook from "./components/06-memos/MemoHook/MemoHook";
 // import Memorize from "./components/06-memos/Memorize/Memorize";
 // import Layout from "./components/05-useLayoutEffect/Layout";
@@ -24,7 +25,8 @@ function App() {
       {/* <Layout /> */}
       {/* <Memorize /> */}
       {/* <MemoHook /> */}
-      <CallbackHook/>
+      {/* <CallbackHook/> */}
+      <TodoApp />
     </div>
   );
 }

@@ -8,7 +8,7 @@
       "customTemplates": {
         "component": "src/templates/component/TemplateName.tsx"
       },
-      "path": "src/components/06-memos",
+      "path": "src/components/08-useReducer",
       "withStyle": false,
       "withTest": true,
       "withStory": false,
