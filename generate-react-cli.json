@@ -8,9 +8,9 @@
       "customTemplates": {
         "component": "src/templates/component/TemplateName.tsx"
       },
-      "path": "src/components/08-useReducer",
+      "path": "src/components/09-useContext",
       "withStyle": false,
-      "withTest": true,
+      "withTest": false,
       "withStory": false,
       "withLazy": false
     }
