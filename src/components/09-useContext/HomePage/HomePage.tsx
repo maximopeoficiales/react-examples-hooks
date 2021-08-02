@@ -7,8 +7,8 @@ const HomePage = (props: MyProps) => {
   props = { ...defaultProps, ...props };
 
   // obtengo el contexto de UserContext
-  const { user, setUser } = useContext<any>(UserContext);
-  console.log(user);
+  const { user,setUser } = useContext(UserContext);
+  // console.log(user);
 
   return (
     <div data-testid="HomePage" className="row justify-content-center">

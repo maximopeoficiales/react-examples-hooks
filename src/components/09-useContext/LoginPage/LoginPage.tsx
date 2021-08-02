@@ -6,8 +6,7 @@ const defaultProps: MyProps = {};
 const LoginPage = (props: MyProps) => {
   props = { ...defaultProps, ...props };
 
-  const { user, setUser } = useContext<any>(UserContext);
-  console.log(user, setUser);
+  const { user, setUser } = useContext(UserContext);
 
   const handlerLogin = () => {
     setUser({
@@ -16,6 +15,7 @@ const LoginPage = (props: MyProps) => {
       age: 22,
     });
   };
+
   return (
     <div data-testid="LoginPage" className="row justify-content-center">
       <div className="col-md-10">
