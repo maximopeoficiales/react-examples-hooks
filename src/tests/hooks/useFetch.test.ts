@@ -15,26 +15,26 @@ describe('Pruebas en useFetch.ts', () => {
     test('debe retornar la info deseada', async () => {
         const { result, waitForNextUpdate } = renderHook(() => useFetch("https://www.breakingbadapi.com/api/quotes/1"));
 
-        await waitForNextUpdate();
+        await waitForNextUpdate({ timeout: 3000 });
         const { data, error, loading } = result.current.state;
-
         console.log(data);
 
-        // expect(data).toBe(null);
-        // expect(loading).toBe(false);
-        // expect(error).toBe(null);
-    })
-
+        expect(data.length).toBe(1);
+        expect(loading).toBe(false);
+        expect(error).toBe(null);
+    });
     test('debe retornar el error', async () => {
-        const { result, waitForNextUpdate } = renderHook(() => useFetch("https://www.breakingbadapi.com/api/quotes/1"));
-        waitForNextUpdate();
+        const { result, waitForNextUpdate } = renderHook(() => useFetch("https://www.breakingbadapi.com/api/quote"));
+        await waitForNextUpdate({ timeout: 3000 });
 
         const { data, error, loading } = result.current.state;
-        console.log(data);
+        // console.log(result.current.state);
 
-        // expect(data).toBe(null);
-        // expect(loading).toBe(true);
-        // expect(typeof error).toBe("string");
+        // console.log(data);
+
+        expect(data).toBe(null);
+        expect(loading).toBe(true);
+        expect(typeof error).toBe("string");
     })
 
 })
