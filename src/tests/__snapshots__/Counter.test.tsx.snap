@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> debe renderizarse correctamente 1`] = `
+<div
+  className="row justify-content-center "
+>
+  <div
+    className="col-md-8"
+  >
+    <h1>
+      Counter component
+    </h1>
+    <p>
+      Counter1: 
+      10
+    </p>
+    <p>
+      Counter2: 
+      30
+    </p>
+    <p>
+      Counter3: 
+      22
+    </p>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Aumentar +1
+    </button>
+  </div>
+</div>
+`;

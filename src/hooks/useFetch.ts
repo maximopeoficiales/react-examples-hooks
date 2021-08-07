@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-interface UseFecthData {
+
+export interface UseFecthData {
     data: any,
     loading: boolean,
     error: any
@@ -8,10 +9,10 @@ interface UseFecthData {
 export const useFetch = (url: string) => {
     // uso de useRef
     const isMounted = useRef(true);
-    const [state, setState] = useState(
+    const [state, setState] = useState<UseFecthData>(
         {
             data: null, loading: true, error: null
-        } as UseFecthData
+        }
     );
 
     useEffect(() => {
@@ -19,7 +20,7 @@ export const useFetch = (url: string) => {
         // cuando se desmonte el componente la referencia estara en false
         return () => {
 
-            // isMounted.current = false
+            isMounted.current = false
         }
     }, []);
 
@@ -27,13 +28,18 @@ export const useFetch = (url: string) => {
         setState({ loading: true, data: null, error: null });
 
         (async () => {
-            // if (isMounted.current) {
-            let data = await (await fetch(url)).json();
-            setState({ loading: false, data, error: null });
-            // }else{
-            // console.log("El useState no se esta ejecutando ");
+            try {
+                let data = await (await fetch(url)).json();
+                if (isMounted.current) {
+                    setState({ loading: false, data, error: null });
+                } else {
+                    console.log("El useState no se esta ejecutando ");
 
-            // }
+                }
+            } catch (error) {
+                setState({ loading: true, data: null, error: "No se pudo cargar la info" });
+            }
+
         })()
     }, [url])
     return { state };

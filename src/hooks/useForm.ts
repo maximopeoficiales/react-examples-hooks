@@ -10,8 +10,10 @@ export const useForm = <T extends Object>(values: T) => {
             [target.name]: target.value,
         });
     };
-
-    return { formValues, handlerChange };
+    const resetForm = () => {
+        setFormValues(values);
+    }
+    return { formValues, handlerChange, resetForm };
 
 
 }
