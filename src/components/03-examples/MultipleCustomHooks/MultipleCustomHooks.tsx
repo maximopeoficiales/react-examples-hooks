@@ -7,7 +7,7 @@ const MultipleCustomHooks = (props: MyProps) => {
   props = { ...defaultProps, ...props };
 
   const { counter, increment, decrement } = useCounter(1);
-  const { state } = useFetch(
+  const state = useFetch(
     `https://www.breakingbadapi.com/api/characters/${counter}`
   );
   // console.log(state);

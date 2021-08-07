@@ -5,7 +5,7 @@ describe('Pruebas en useFetch.ts', () => {
 
     test('debe retornar la info por defecto', () => {
         const { result } = renderHook(() => useFetch("https://www.breakingbadapi.com/api/quotes/1"));
-        const { data, error, loading } = result.current.state;
+        const { data, error, loading } = result.current;
 
         expect(data).toBe(null);
         expect(loading).toBe(true);
@@ -16,7 +16,7 @@ describe('Pruebas en useFetch.ts', () => {
         const { result, waitForNextUpdate } = renderHook(() => useFetch("https://www.breakingbadapi.com/api/quotes/1"));
 
         await waitForNextUpdate({ timeout: 3000 });
-        const { data, error, loading } = result.current.state;
+        const { data, error, loading } = result.current;
         console.log(data);
 
         expect(data.length).toBe(1);
@@ -27,8 +27,8 @@ describe('Pruebas en useFetch.ts', () => {
         const { result, waitForNextUpdate } = renderHook(() => useFetch("https://www.breakingbadapi.com/api/quote"));
         await waitForNextUpdate({ timeout: 3000 });
 
-        const { data, error, loading } = result.current.state;
-        // console.log(result.current.state);
+        const { data, error, loading } = result.current;
+        // console.log(result.current);
 
         // console.log(data);
 
