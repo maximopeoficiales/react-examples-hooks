@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en TodoItem.tsx debe de mostrarse correctamente 1`] = `
+<p
+  className="item d-flex justify-content-between align-items-center  complete"
+  key="2"
+  onClick={[Function]}
+>
+  <b>
+    2
+    . 
+    alguna descripcion 2
+  </b>
+  <button
+    className="btn btn-sm btn-danger"
+    onClick={[Function]}
+  >
+    Delete
+  </button>
+</p>
+`;

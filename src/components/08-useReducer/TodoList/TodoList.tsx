@@ -24,7 +24,7 @@ const TodoList = (props: MyProps) => {
               key={todo.id}
               i={i}
               deleteTodo={deleteTodo}
-              toogleTodo={toogleTodo}
+              toggleTodo={toogleTodo}
               todo={todo}
             />
           );

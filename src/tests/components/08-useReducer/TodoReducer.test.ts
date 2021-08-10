@@ -28,12 +28,15 @@ describe('pruebas en TodoReducer.ts', () => {
         // console.log(state);
     })
 
-    test('debe de marcarse como no completado el todo 1', () => {
-        const state = todoReducer(demoTodos, { type: Action.TOGGLE, payload: demoTodos[0] });
+    test('debe de realizarse el toggle el todo 1', () => {
+        // por defecto esta en done
+        let state = todoReducer(demoTodos, { type: Action.TOGGLE, payload: demoTodos[0] });
 
         expect(state.length).toEqual(1);
         expect(state.find(e => e.id == "1")?.done).toBeFalsy();
-        // console.log(state);
+        state = todoReducer(state, { type: Action.TOGGLE, payload: demoTodos[0] });
+        expect(state.find(e => e.id == "1")?.done).toBeTruthy();
+
     })
 
 })
