@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en RealExampleReft debe mostrarse correctamente 1`] = `
+<div
+  className="row justify-content-center"
+  data-testid="RealExampleRef"
+>
+  <div
+    className="col-md-10"
+  >
+    <h1>
+      RealExampleRef component
+    </h1>
+    <button
+      onClick={[Function]}
+    >
+      Hidden
+    </button>
+  </div>
+</div>
+`;

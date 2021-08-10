@@ -18,7 +18,7 @@ const RealExampleRef = (props: MyProps) => {
         >
           Hidden
         </button>
-        {!hidden && <MultipleCustomHooks />}
+        {hidden && <MultipleCustomHooks />}
       </div>
     </div>
   );

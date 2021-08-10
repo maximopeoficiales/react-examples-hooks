@@ -3,6 +3,7 @@ export enum Action {
     DELETE = "delete",
     TOGGLE = "toggle",
     TOGGLE_OLD = "toggle_old",
+    EMPTY = "",
 }
 export type Todo =
     {
