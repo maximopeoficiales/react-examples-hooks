@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en LoginPage debe de mostrarse correctament 1`] = `
+<div
+  className="row justify-content-center"
+  data-testid="LoginPage"
+>
+  <div
+    className="col-md-10"
+  >
+    <h1>
+      LoginPage component
+    </h1>
+    <pre>
+      {}
+    </pre>
+    <button
+      className="btn btn-primary btn-lg btn-block"
+      id=""
+      name=""
+      onClick={[Function]}
+      type="button"
+    >
+      Login
+    </button>
+  </div>
+</div>
+`;

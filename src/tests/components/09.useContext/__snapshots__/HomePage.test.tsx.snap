@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en HomeScreen debe de mostrarse correctament 1`] = `
+<div
+  className="row justify-content-center"
+  data-testid="HomePage"
+>
+  <div
+    className="col-md-10"
+  >
+    <h1>
+      HomePage component
+    </h1>
+    <pre>
+      {
+   "id": 1,
+   "age": 33,
+   "name": "jorge"
+}
+    </pre>
+  </div>
+</div>
+`;

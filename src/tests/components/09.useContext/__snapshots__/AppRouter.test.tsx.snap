@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en LoginPage debe de mostrarse correctament 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand navbar-light bg-light"
+  >
+    <div
+      className="nav navbar-nav"
+    >
+      <a
+        aria-current="page"
+        className="nav-item nav-link  active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Home
+      </a>
+      <a
+        aria-current={null}
+        className="nav-item nav-link"
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+      <a
+        aria-current={null}
+        className="nav-item nav-link"
+        href="/login"
+        onClick={[Function]}
+      >
+        Login
+      </a>
+    </div>
+  </nav>
+  <div
+    className="my-4"
+  >
+    <div
+      className="row justify-content-center"
+      data-testid="HomePage"
+    >
+      <div
+        className="col-md-10"
+      >
+        <h1>
+          HomePage component
+        </h1>
+        <pre>
+          {
+   "id": 1,
+   "age": 33,
+   "name": "jorge"
+}
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
