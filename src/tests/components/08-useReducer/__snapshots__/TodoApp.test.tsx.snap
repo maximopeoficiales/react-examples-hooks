@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en TodoApp debe mostrarse correctamente 1`] = `
+<div
+  className="row justify-content-center"
+  data-testid="TodoApp"
+>
+  <div
+    className="col-md-10"
+  >
+    <h1
+      className="text-center font-weight-bold my-4"
+    >
+      TodoApp 
+      0
+    </h1>
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-7"
+      >
+        <TodoList
+          deleteTodo={[Function]}
+          todos={Array []}
+          toogleTodo={[Function]}
+        />
+      </div>
+      <div
+        className="col-md-5"
+      >
+        <TodoForm
+          addTodo={[Function]}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

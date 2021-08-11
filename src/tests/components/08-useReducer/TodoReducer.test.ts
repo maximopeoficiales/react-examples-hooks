@@ -14,7 +14,7 @@ describe('pruebas en TodoReducer.ts', () => {
     test('debe de agregar un nuevo todo correctamente', () => {
         const state = todoReducer(demoTodos, { type: Action.ADD, payload: newTodo });
 
-        expect(state.length).toEqual(2);
+        expect(state.length).toEqual(3);
         expect(state.find(e => e.id == "2")).toEqual(newTodo);
         // console.log(state);
 
@@ -23,7 +23,7 @@ describe('pruebas en TodoReducer.ts', () => {
     test('debe de eliminar el todo 1', () => {
         const state = todoReducer(demoTodos, { type: Action.DELETE, payload: demoTodos[0] });
 
-        expect(state.length).toEqual(0);
+        expect(state.length).toEqual(1);
         expect(state.find(e => e.id == "1")).toBe(undefined);
         // console.log(state);
     })
@@ -32,7 +32,7 @@ describe('pruebas en TodoReducer.ts', () => {
         // por defecto esta en done
         let state = todoReducer(demoTodos, { type: Action.TOGGLE, payload: demoTodos[0] });
 
-        expect(state.length).toEqual(1);
+        expect(state.length).toEqual(2);
         expect(state.find(e => e.id == "1")?.done).toBeFalsy();
         state = todoReducer(state, { type: Action.TOGGLE, payload: demoTodos[0] });
         expect(state.find(e => e.id == "1")?.done).toBeTruthy();

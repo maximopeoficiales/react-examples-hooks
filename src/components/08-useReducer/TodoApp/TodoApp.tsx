@@ -34,7 +34,7 @@ const TodoApp = (props: MyProps) => {
   return (
     <div data-testid="TodoApp" className="row justify-content-center">
       <div className="col-md-10">
-        <h1 className="text-center font-weight-bold my-4">TodoApp component</h1>
+        <h1 className="text-center font-weight-bold my-4">TodoApp {todos.length}</h1>
 
         <div className="row">
           <div className="col-md-7">

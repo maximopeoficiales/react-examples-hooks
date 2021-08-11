@@ -5,6 +5,11 @@ export const demoTodos: Todo[] = [
         id: "1",
         desc: "alguna descripcion",
         done: true
+    },
+    {
+        id: "3",
+        desc: "alguna descripcion3",
+        done: true
     }
 ];
 export const newTodo: Todo =

@@ -12,6 +12,7 @@ const TodoForm = (props: MyProps) => {
   const {
     formValues: { description },
     handlerChange,
+    resetForm,
   } = useForm({ description: "" });
 
   const handlerSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
@@ -23,6 +24,7 @@ const TodoForm = (props: MyProps) => {
       done: false,
     };
     props.addTodo(newTodo);
+    resetForm();
   };
 
   return (
